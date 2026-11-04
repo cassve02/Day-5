@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/search.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Navigation -->
+        <nav class="navigation">
+            <div class="menu_container">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="search.html" class="active" aria-current="page">Search</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Search Options -->
+        <div class="search_area">
+
+            <!-- Full Search -->
+            <section class="search_page">
+                <h2>Full search</h2>
+                <div class="search_full">
+                    <span class="search_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                            <path d="M0 0h16v16H0z" fill="none" />
+                            <path fill="currentColor"
+                                d="M6.5 1a5.5 5.5 0 0 1 4.437 8.749l3.556 2.846a1.351 1.351 0 1 1-1.898 1.898l-2.846-3.556A5.5 5.5 0 1 1 6.5 1m0 2a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7" />
+                        </svg>
+                    </span>
+                    <input type="text" placeholder="Search" class="search_input">
+                </div>
+                <p>Let's go already!</p>
+            </section>
+
+            <div class="filter_category">
+
+                <h2>Search filter: category</h2>
+
+                <ul>
+
+                    <li>
+                        <label> <input type="checkbox" name="category" value="seafood">
+                            Seafood
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="checkbox" name="category" value="beef/pork">
+                            Beef/Pork
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="checkbox" name="category" value="chicken">
+                            Chicken
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="checkbox" name="category" value="misc">
+                            Misc
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="checkbox" name="category" value="pasta">
+                            Pasta
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="checkbox" name="category" value="Vegetarian">
+                            Vegetarian
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="checkbox" name="category" value="desserts">
+                            Desserts
+                        </label>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+        <section class="search_content">
+
+            <!-- Search Result one -->
+            <div class="search_result">
+
+                <div class="search_result_text_top" data-category="seafood">
+                    <p class="category_label">Category:</p>
+                    <p class="category_name">seafood</p>
+                </div>
+
+                <div class="search_result_text">
+                    <h2>Search Result One</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus minima nobis temporibus soluta
+                        harum recusandae alias debitis itaque accusantium tempora tenetur rem nisi dolorum, labore fugit
+                        facilis. Inventore, quod fugit?</p>
+                </div>
+            
+            </div>
+
+            <!-- Search Result Two -->
+
+            <div class="search_result">
+
+                <div class="search_result_text_top" data-category="chicken">
+                    <p class="category_label">Category:</p>
+                    <p class="category_name">chicken</p>
+                </div>
+
+                <div class="search_result_text">
+                    <h2>Search Result Two</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus minima nobis temporibus soluta
+                        harum recusandae alias debitis itaque accusantium tempora tenetur rem nisi dolorum, labore fugit
+                        facilis. Inventore, quod fugit?</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+
+            <div class="footer_content">
+
+                <!-- Socials -->
+                <div class="footer_socials">
+                    <ul>
+                        <li><a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                    <path d="M0 0h24v24H0z" fill="none" />
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2">
+                                        <path
+                                            d="M2 8a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" />
+                                        <path d="m10 9l5 3l-5 3z" />
+                                    </g>
+                                </svg>
+                                Youtube</a></li>
+                        <li><a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                    <path d="M0 0h24v24H0z" fill="none" />
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2">
+                                        <path
+                                            d="M3 7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z" />
+                                        <path d="M8.5 12a3.5 3.5 0 1 0 7 0a3.5 3.5 0 0 0-7 0M17 7v.01" />
+                                    </g>
+                                </svg>
+                                Instagram</a></li>
+                        <li><a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                    <path d="M0 0h24v24H0z" fill="none" />
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M7 10v4h3v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3V3h-3a5 5 0 0 0-5 5v2z" />
+                                </svg>
+                                Facebook</a></li>
+                    </ul>
+                </div>
+
+                <!-- Navigation -->
+                <div class="footer_navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="search.html">Search</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Line -->
+                <div class="footer_line"></div>
+
+                <!-- Powered by-->
+                <div class="footer_powered">
+                    <p>@ 2026 In The Kitchen. All rights reserved</p>
+                    <p>Etsy is powered by 100% renewable electricity</p>
+                </div>
+            </div>
+
+        </footer>
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
