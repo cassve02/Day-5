@@ -246,7 +246,7 @@ body {
     width: var(--width-12col);
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(12), 1fr;
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto auto auto;
     gap: var(--grid-gap);
 
@@ -520,6 +520,7 @@ h6 {
 [class^="content_area_block_text"] {
     width: 50%;
     background-color: var(--background-color-light);
+    padding-top: 15px;
 }
 
 [class^="content_area_block_image"] {
@@ -548,6 +549,10 @@ h6 {
 
 .content_area_text_middle {
     padding: 0 0 30px 0;
+}
+
+.content_area_button {
+    padding-top: 28px;
 }
 
 .content_area_button a {
