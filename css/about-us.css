@@ -1,0 +1,427 @@
+:root {
+    /* Dimensions */
+    --width-full: 100%;
+    --width-12col: 1200px;
+
+    /* Grid Settings */
+    --grid-gap: 10px;
+    --padding-default: 20px;
+
+    /* Colours */
+    --background-color-navigation: #00000088;
+    --background-color-light: #ededed;
+    --background-color-dark-bg: #111111;
+    --primary-color: #bf5b23;
+    --color-white: #ffffff;
+    --color-dark: #373737;
+    --color-light: #ebebeb;
+
+    /* color swatch categories */
+    --category-seafood: #3e30e2;
+    --category-chicken: #249c8e;
+    --category-meats: #d09189;
+    --category-veg: #298f3f;
+    --category-misc: #9a951e;
+    --category-pasta: #bf5b23;
+    --category-desserts: #9374eb;
+
+
+}
+
+
+/* data-category attributes */
+
+div[data-category="Kitchen"] {
+    border-left: 3px solid var(--primary-color)
+}
+
+div[data-category="seafood"] {
+    border-left: 1px solid var(--category-seafood)
+}
+
+p[data-category="seafood"] {
+    color: var(--category-seafood)
+}
+
+span[data-category="seafood"] {
+    color: var(--category-seafood)
+}
+
+div[data-category="chicken"] {
+    border-left: 1px solid var(--category-chicken)
+}
+
+p[data-category="chicken"] {
+    color: var(--category-chicken)
+}
+
+span[data-category="chicken"] {
+    color: var(--category-chicken)
+}
+
+div[data-category="meats"] {
+    border-left: 1px solid var(--category-meats)
+}
+
+p[data-category="meats"] {
+    color: var(--category-meats)
+}
+
+span[data-category="meats"] {
+    color: var(--category-meats)
+}
+
+div[data-category="veg"] {
+    border-left: 1px solid var(--category-veg)
+}
+
+p[data-category="veg"] {
+    color: var(--category-veg)
+}
+
+span[data-category="veg"] {
+    color: var(--category-veg)
+}
+
+div[data-category="misc"] {
+    border-left: 1px solid var(--category-misc)
+}
+
+p[data-category="misc"] {
+    color: var(--category-misc)
+}
+
+span[data-category="misc"] {
+    color: var(--category-misc)
+}
+
+div[data-category="pasta"] {
+    border-left: 1px solid var(--category-pasta)
+}
+
+p[data-category="pasta"] {
+    color: var(--category-pasta)
+}
+
+span[data-category="pasta"] {
+    color: var(--category-pasta)
+}
+
+div[data-category="desserts"] {
+    border-left: 1px solid var(--category-desserts)
+}
+
+p[data-category="desserts"] {
+    color: var(--category-desserts)
+}
+
+span[data-category="desserts"] {
+    color: var(--category-desserts)
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: var(--width-full);
+    /* 100% */
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+    position: relative;
+    background-color: var(--background-color-dark-bg);
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto;
+    gap: var(--grid-gap);
+    width: var(--width-full);
+}
+
+.navigation,
+.hero,
+.image_section,
+.footer {
+    width: var(--width-full);
+    /* Den har fuld vidde*/
+}
+
+.todays_recipes,
+.categories,
+.content_area {
+    width: var(--width-12col);
+    margin: 0 auto 0 auto;
+}
+
+.mobile_menu {
+    display: none;
+}
+
+.hamburger_menu {
+    display: none;
+    color: var(--color-light);
+    font-size: 24px;
+}
+
+
+.navigation {
+    width: var(--width-full);
+    height: 80px;
+    background-color: var(--background-color-navigation);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 10;
+}
+
+.navigation a.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+    font-weight: 700;
+}
+
+/* For Cool floaty later JS */
+.navigation.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000
+}
+
+.menu_container {
+    width: var(--width-12col);
+}
+
+.menu_container ul {
+    display: flex;
+}
+
+.menu_container ul li {
+    list-style: none;
+}
+
+.menu_container a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: var(--background-color-light);
+    border-right: 1px solid var(--background-color-light);
+}
+
+.menu_container a:hover {
+    color: var(--primary-color);
+}
+
+.menu_container li:last-child a {
+    border-right: none;
+}
+
+/* About US Header */
+
+.about_us {
+    display: grid;
+    justify-items: center;
+}
+
+.about_us_container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: var(--width-12col);
+    gap: var(--grid-gap);
+}
+
+.about_us_header {
+    grid-column: 1 / -1;
+    padding: 20px 20px;
+    background-color: var(--color-dark);
+    border-radius: 5px;
+    margin-top: 170px;
+    text-align: center;
+    grid-row: 1;
+}
+
+.about_us_header h1 {
+    color: var(--color-light);
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.about_us_header p:first-child {
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.about_us_header p:last-child {
+    color: var(--color-light);
+}
+
+/* About us Image + Text */
+
+.about_us_image {
+    grid-row: 2;
+    grid-column: 1 / span 6;
+}
+
+.about_us_image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.about_us_text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    flex-direction: column;
+    text-align: start;
+
+    padding-left: 20px;
+
+    grid-row: 2;
+    grid-column: 7 / span 5;
+    color: var(--color-light);
+}
+
+.about_us_text p:first-child {
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.about_us_text h2 {
+    padding-bottom: 10px;
+}
+
+/* About Us Bottom */
+
+.about_us_value {
+    grid-column: 1 / span 12;
+
+    padding-bottom: 20px;
+    padding-top:20px;
+
+    background: var(--color-dark);
+    border-radius: 5px;
+
+}
+
+.about_us_value_header h2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--color-light);
+    
+
+}
+
+.about_us_value_icons {
+    grid-row: 3;
+    grid-column: 1 / -1;
+
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    color: var(--color-light);
+    font-weight: 600;
+}
+
+.about_us_value_icons > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.about_us_value_icons svg {
+color: var(--primary-color);
+font-size: 30px;
+padding-bottom: 5px;
+
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--primary-color);
+    padding: 50px 100px;
+    margin-top: 80px;
+
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--width-12col);
+    justify-self: center;
+}
+
+.footer_navigation ul,
+.footer_socials ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+
+.footer_navigation {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-dark);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer_line {
+    height: 90px;
+    width: 1px;
+    background-color: #ebebeb;
+}
+
+.footer_powered {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    text-align: right;
+    color: var(--color-dark);
+
+}
+
+/* Footer Links */
+
+.footer_navigation a,
+.footer_socials a {
+    color: var(--color-dark);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer_socials svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
